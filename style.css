@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    font-family: 'Lucida', sans-serif;
+    background-color: #5918c955;
+    color: #190934;
+}
+
+.header {
+    background-color: #5014B8;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    color: #FDDC22;
+    font-size: 20px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    width: 50%;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #FFF7CC;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #5A18C9;
+    color: #FDDC22;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #f1f1f1!important;
+    color: #130727;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 'auto';
+}
+
+div.content-getconnected {
+    margin-left: 200px;
+    padding: 20px 16px;
+    height: 100px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+/* Team: Three columns side by side */
+.column {
+    float: left;
+    width: 26.66%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: #FDDC22;
+    background-color: #5014B8;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #5918c955;
+}
+
+/* Clear floats */
+#events {
+    font-family: 'Lucida', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#events td,
+#events th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#events tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#events tr:hover {
+    background-color: #ddd;
+}
+
+#events th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #5014B8;
+    color: #FDDC22;
+}
+
+/* Contact form  */
+* {
+    box-sizing: border-box;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #5014B8;
+    color: #FDDC22;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #5918c955;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+/* Sponsors list */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    padding: 5px;
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+  }
+
+  .parent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .child {
+    flex: 1 0 21%; 
+    margin: 5px;
+    height: 100px;
+  }
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .child {
+      flex: 100%;
+    }
+  }
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #FFDD1F;
+    text-align: center;
+}
